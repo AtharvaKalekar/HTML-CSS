@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML + CSS Beginner Practice Guide</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f0f0f0;
+    }
+    header {
+      background-color: #af4caf;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem 1rem;
+    }
+    nav {
+      background-color: #225dae;
+      display: flex;
+      justify-content: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 1rem;
+    }
+    nav a:hover {
+      background-color: #aa1717;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 2rem 1rem;
+      background-color: white;
+    }
+    h2 {
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+    .card {
+      background: #f9f9f9;
+      border: 1px solid #ddd;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+    }
+    .card strong {
+      background-color: #eee;
+      padding: 0.2rem 0.4rem;
+      border-radius: 4px;
+      font-family: monospace;
+    }
+    .section-title {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    /* Practice Examples */
+    .example {
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 6px;
+    }
+    .green-box { background-color: #19a2a4; }
+    .blue-box { background-color: #31a4a0; }
+    .red-box { background-color: #40aaad; }
+    .flex-row {
+      display: flex;
+      gap: 1rem;
+      margin: 1rem 0;
+    }
+    .flex-item {
+      flex: 1;
+      padding: 1rem;
+      background-color: #b3d4e0;
+      text-align: center;
+    }
+    .styled-box {
+      border: 2px dashed rgb(37, 80, 155);
+      text-align: center;
+      padding: 1rem;
+      font-size: 1.1rem;
+    }
+    .alert-box {
+      background-color: #fff3cd;
+      padding: 1rem;
+      border-radius: 10px;
+      margin-top: 1rem;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #555;
+      margin: 2rem 0 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>HTML + CSS Beginner Practice Guide</h1>
+    <p>Understand basic HTML tags and CSS properties</p>
+  </header>
+
+  <nav>
+    <a href="#">HTML</a>
+    <a href="#">CSS</a>
+    <a href="#">Practice</a>
+  </nav>
+
+  <div class="container">
+    <h2>📘 HTML Basics</h2>
+    <div class="card"><strong>html</strong> — Root element that wraps entire HTML document.</div>
+    <div class="card"><strong>head</strong> — Contains metadata like title, links to CSS, charset.</div>
+    <div class="card"><strong>body</strong> — Visible part of HTML page.</div>
+    <div class="card"><strong>h1 to h6</strong> — Headings, h1 is largest.</div>
+    <div class="card"><strong>p</strong> — Paragraph text.</div>
+    <div class="card"><strong>div</strong> — Generic container block.</div>
+    <div class="card"><strong>span</strong> — Inline container.</div>
+    <div class="card"><strong>a href</strong> — Hyperlink.</div>
+    <div class="card"><strong>ul, ol, li</strong> — Unordered, ordered lists and items.</div>
+    <div class="card"><strong>table</strong> — Table structure with &lt;tr&gt;, &lt;th&gt;, &lt;td&gt;</div>
+
+    <h2>🎨 CSS Basics</h2>
+    <div class="card"><strong>color:</strong> Changes text color.</div>
+    <div class="card"><strong>background-color:</strong> Sets background.</div>
+    <div class="card"><strong>padding:</strong> Space inside the element.</div>
+    <div class="card"><strong>margin:</strong> Space outside the element.</div>
+    <div class="card"><strong>border:</strong> Adds outline around the element.</div>
+    <div class="card"><strong>font-size:</strong> Controls text size.</div>
+    <div class="card"><strong>text-align:</strong> Aligns text.</div>
+    <div class="card"><strong>display:</strong> Controls layout (block, inline, flex).</div>
+    <div class="card"><strong>flexbox:</strong> Layout system for flexible items.</div>
+    <div class="card"><strong>box-shadow:</strong> Adds shadow around elements.</div>
+
+    <h2>🧠 Practice Examples</h2>
+    <div class="example green-box">Try modifying padding and margin values and observe changes.</div>
+    <div class="example blue-box"><strong>Box 1:</strong> Padding: 20px | Margin: 10px</div>
+    <div class="example red-box"><strong>Box 2:</strong> Padding: 0 | Margin: 30px</div>
+
+    <div class="flex-row">
+      <div class="flex-item">Flex Item 1</div>
+      <div class="flex-item" style="background-color: #76e09e;">Flex Item 2</div>
+    </div>
+
+    <div class="example green-box">Experiment with <code>text-align</code>, <code>font-size</code>, and <code>border-radius</code>.</div>
+    <div class="styled-box">Centered and styled text!</div>
+    <div class="alert-box">Rounded corner alert box.</div>
+  </div>
+
+  <footer>
+    Made with ❤️ for Beginners | Practice Makes Perfect!
+  </footer>
+
+</body>
+</html>
