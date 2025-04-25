@@ -1,22 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>CSS Practice</title>
-    <style>
-        p {
-            font-family: Arial, sans-serif;
-            color: #555;
-            line-height: 1.6;
-            font-size: 1.2em;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Homepage</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #fff;
+      color: #111;
+    }
+
+    .section {
+      border: 1px solid #ddd;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+    }
+
+    h1, h2 {
+      margin-top: 0;
+    }
+
+    .list-item {
+      border: 1px solid #eee;
+      padding: 10px;
+      margin: 5px 0;
+      border-radius: 6px;
+    }
+
+    .emoji {
+      margin-right: 8px;
+    }
+  </style>
 </head>
 <body>
 
-    <h1>CSS</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum numquam, impedit fuga ipsum quo, nesciunt, voluptatibus suscipit doloremque alias amet sunt eligendi accusamus at et possimus tempore. Cumque quos illo commodi odio, voluptatibus perspiciatis velit in, cum nemo veritatis sequi eligendi, qui totam. Accusamus saepe perspiciatis dicta necessitatibus, aliquam excepturi!</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, temporibus at! Porro, ducimus autem minus culpa vero facilis? Nobis maiores, doloribus harum, velit ipsam, asperiores ab alias ad molestiae qui excepturi assumenda. Cupiditate reprehenderit mollitia nemo quasi sapiente sunt voluptatibus?</p>
-    
-    
+  <!-- Welcome Section -->
+  <div class="section">
+    <h1>Welcome to Our Website</h1>
+    <p>This is a brief introduction to our homepage.</p>
+  </div>
+
+  <!-- Features Section -->
+  <div class="section">
+    <h2>Features</h2>
+    <div class="list-item">Fast Performance</div>
+    <div class="list-item">Secure Data</div>
+    <div class="list-item">User-Friendly Interface</div>
+  </div>
+
+  <!-- Services Section -->
+  <div class="section">
+    <h2>Services</h2>
+    <div class="list-item"><span class="emoji">💻</span>Web Development</div>
+    <div class="list-item"><span class="emoji">📱</span>App Development</div>
+    <div class="list-item"><span class="emoji">🎨</span>Graphic Design</div>
+  </div>
+
 </body>
 </html>
