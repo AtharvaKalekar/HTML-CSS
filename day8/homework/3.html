@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Image Gallery Hover Effects</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #111;
+      color: #fff;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      width: 100%;
+      max-width: 1200px;
+    }
+
+    .img-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+      height: 300px;
+      cursor: pointer;
+    }
+
+    .img-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all 0.5s ease;
+      display: block;
+    }
+
+    /* 1. Zoom + Brighten */
+    .effect-zoom:hover img {
+      transform: scale(1.2);
+      filter: brightness(1.2);
+    }
+
+    /* 2. Grayscale to Color */
+    .effect-grayscale img {
+      filter: grayscale(100%);
+      transition: filter 0.4s ease;
+    }
+
+    .effect-grayscale:hover img {
+      filter: grayscale(0%);
+    }
+
+    .effect-overlay .overlay-text {
+      position: absolute;
+      bottom: -100%;
+      left: 0;
+      width: 100%;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.6);
+      color: #fff;
+      text-align: center;
+      transition: bottom 0.4s ease;
+    }
+
+    .effect-overlay:hover .overlay-text {
+      bottom: 0;
+    }
+
+    .effect-blur::after {
+      content: 'Nature Scene';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 1.5em;
+      background: rgba(0,0,0,0.5);
+      padding: 10px 20px;
+      opacity: 0;
+      transition: opacity 0.4s ease;
+    }
+
+    .effect-blur:hover::after {
+      opacity: 1;
+    }
+
+    .effect-blur:hover img {
+      filter: blur(2px) brightness(0.7);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="gallery">
+    
+    <div class="img-card effect-zoom">
+      <img src="data:image/jpeg;base64,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" alt="Zoom Effect">
+    </div>
+
+    <div class="img-card effect-grayscale">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw7zqhlsvdBWWgri5-S6JK95EowJu2-SGJuA&s" alt="Grayscale to Color">
+    </div>
+
+    <div class="img-card effect-overlay">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNDf-a0wpKE6txn-cT09I0Kzj80aOEOgLVmQ&s" alt="Overlay Text">
+      <div class="overlay-text">Sasukeee</div>
+    </div>
+
+    <div class="img-card effect-blur">
+      <img src="https://picsum.photos/id/1045/600/400" alt="Blur Text">
+    </div>
+
+  </div>
+
+</body>
+</html>
