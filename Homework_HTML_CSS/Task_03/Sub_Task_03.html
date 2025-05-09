@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simple Blog Layout</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      padding: 20px;
+      color: #333;
+    }
+
+    .container {
+      display: grid;
+      grid-template-areas:
+        "header header"
+        "main sidebar"
+        "footer footer";
+      grid-template-columns: 3fr 1fr;
+      grid-template-rows: auto 1fr auto;
+      gap: 20px;
+      min-height: 100vh;
+    }
+
+    header {
+      grid-area: header;
+      background-color: #2c3e50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 1.8rem;
+      border-radius: 8px;
+    }
+
+    main {
+      grid-area: main;
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    aside {
+      grid-area: sidebar;
+      background-color: #eaf0f6;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    }
+
+    footer {
+      grid-area: footer;
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      border-radius: 8px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        grid-template-areas:
+          "header"
+          "main"
+          "sidebar"
+          "footer";
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      🌟 My Awesome Blog
+    </header>
+
+    <main>
+      <h2>Welcome to My Blog</h2>
+      <p>This is the main content area where you'll find posts, thoughts, and stories. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent suscipit nisi ut nunc viverra, nec bibendum erat convallis.</p>
+      <p>New articles drop weekly, so stay tuned for fresh inspiration.</p>
+    </main>
+
+    <aside>
+      <h3>Sidebar</h3>
+      <ul>
+        <li>🔗 Recent Posts</li>
+        <li>📁 Categories</li>
+        <li>📨 Subscribe</li>
+      </ul>
+    </aside>
+
+    <footer>
+      © 2025 Rizwan's Blog | Built with 💻 and ☕
+    </footer>
+  </div>
+</body>
+</html>

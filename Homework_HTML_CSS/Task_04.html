@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        p {
+            color: blue;
+        }
+        .card {
+            border: 1px solid black;
+        }
+        #header {
+            background-color: red;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        h1, h2, h3 {
+            font-family: 'Arial';
+        }
+        nav a {
+            text-decoration: none;
+        }
+        ul > li {
+            list-style: square;
+        }
+        h1 + p {
+            margin-top: 0;
+        }
+        h1 ~ p {
+            color: gray;
+        }
+        input[type="text"] {
+            border: 2px solid blue;
+        }
+        a:hover {
+            color: red;
+        }
+        li:first-child {
+            font-weight: bold;
+        }
+        p::first-line {
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <h2>Css Selectors</h2>
+    <div class="card">
+        <h2 id="name">Rizwan Salmani</h2>
+        <p class="bio">Front-end Developer from New York</p>
+        <a href="#">View Profile</a>
+    </div>
+
+    <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <form>
+        <label>Email:</label>
+        <input type="email" />
+      
+        <label>Password:</label>
+        <input type="password" />
+      
+        <button>Login</button>
+    </form>
+    
+    <article>
+        <h3>Breaking News</h3>
+        <p>Some important text goes here.</p>
+    </article>
+
+    <section class="blog">
+        <h2>Blog Posts</h2>
+        <article>
+          <h3>Post One</h3>
+          <p>Text of post one.</p>
+        </article>
+        <article>
+          <h3>Post Two</h3>
+          <p>Text of post two.</p>
+        </article>
+    </section>
+      
+      
+      
+</body>
+</html>
